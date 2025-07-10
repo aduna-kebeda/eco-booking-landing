@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Bug, Rat2, Home, Building2, Zap, Shield } from 'lucide-react';
+import { Bug, Rat, Home, Building2, Zap, Shield } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       features: ['German cockroaches', 'American cockroaches', 'Child-safe methods']
     },
     {
-      icon: Rat2,
+      icon: Rat,
       title: 'Rodent Control',
       description: 'Humane rodent removal and prevention with sealing entry points and ongoing monitoring.',
       features: ['Rats & mice', 'Entry point sealing', 'Ongoing monitoring']
