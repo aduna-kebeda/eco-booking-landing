@@ -21,55 +21,55 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-900 text-white">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
+            <div className="flex items-center space-x-2 mb-4">
               <div className="bg-primary-600 p-2 rounded-lg">
-                <Shield className="h-6 w-6 text-white" />
+                <Shield className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Ecovia</h3>
-                <p className="text-sm text-gray-400">Pest Control</p>
+                <h3 className="text-lg font-bold">Ecovia</h3>
+                <p className="text-xs text-gray-400">Pest Control</p>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-sm text-gray-300 mb-4 leading-relaxed">
               Sydney's leading eco-friendly pest control specialists. 
               Protecting families and businesses with safe, effective solutions since 2019.
             </p>
             
-            <div className="flex space-x-4">
+            <div className="flex space-x-3">
               <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary-600 transition-colors cursor-pointer">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-4 w-4" />
               </div>
               <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary-600 transition-colors cursor-pointer">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-4 w-4" />
               </div>
               <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary-600 transition-colors cursor-pointer">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-4 w-4" />
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Our Services</h4>
-            <ul className="space-y-3">
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">Termite Control</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">Cockroach Treatment</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">Rodent Control</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">Ant Control</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">Spider Treatment</button></li>
-              <li><button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-primary-400 transition-colors">General Pest Control</button></li>
+            <h4 className="text-base font-semibold mb-4">Our Services</h4>
+            <ul className="space-y-2">
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Termite Control</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Cockroach Treatment</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Rodent Control</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Ant Control</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">Spider Treatment</button></li>
+              <li><button onClick={() => scrollToSection('services')} className="text-sm text-gray-300 hover:text-primary-400 transition-colors">General Pest Control</button></li>
             </ul>
           </div>
 
           {/* Areas Served */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Areas We Serve</h4>
-            <ul className="space-y-3 text-gray-300">
+            <h4 className="text-base font-semibold mb-4">Areas We Serve</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>Sydney CBD</li>
               <li>Eastern Suburbs</li>
               <li>Northern Beaches</li>
@@ -83,45 +83,45 @@ const Footer = () => {
 
           {/* Contact & CTA */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Get In Touch</h4>
+            <h4 className="text-base font-semibold mb-4">Get In Touch</h4>
             
-            <div className="space-y-4 mb-6">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary-400" />
+            <div className="space-y-3 mb-4">
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-primary-400" />
                 <div>
-                  <p className="font-medium">0400 123 456</p>
-                  <p className="text-sm text-gray-400">24/7 Emergency Service</p>
+                  <p className="text-sm font-medium">0400 123 456</p>
+                  <p className="text-xs text-gray-400">24/7 Emergency Service</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary-400" />
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-primary-400" />
                 <div>
-                  <p className="font-medium">info@ecovia.com.au</p>
-                  <p className="text-sm text-gray-400">Response within 2 hours</p>
+                  <p className="text-sm font-medium">info@ecovia.com.au</p>
+                  <p className="text-xs text-gray-400">Response within 2 hours</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-primary-400" />
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-primary-400" />
                 <div>
-                  <p className="font-medium">All Sydney Areas</p>
-                  <p className="text-sm text-gray-400">Free travel within 30km</p>
+                  <p className="text-sm font-medium">All Sydney Areas</p>
+                  <p className="text-xs text-gray-400">Free travel within 30km</p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-primary-400" />
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 text-primary-400" />
                 <div>
-                  <p className="font-medium">Mon-Fri: 7am-7pm</p>
-                  <p className="text-sm text-gray-400">Sat-Sun: 8am-5pm</p>
+                  <p className="text-sm font-medium">Mon-Fri: 7am-7pm</p>
+                  <p className="text-xs text-gray-400">Sat-Sun: 8am-5pm</p>
                 </div>
               </div>
             </div>
 
             <Button 
               onClick={scrollToBooking}
-              className="w-full bg-primary-600 hover:bg-primary-700 text-white mb-4"
+              className="w-full bg-primary-600 hover:bg-primary-700 text-white mb-3"
             >
               Book Free Inspection
             </Button>
@@ -135,20 +135,20 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 py-6">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+            <p className="text-gray-400 text-xs mb-3 md:mb-0">
               © 2024 Ecovia Pest Control. All rights reserved.
             </p>
             
-            <div className="flex space-x-6 text-sm">
+            <div className="flex space-x-4 text-xs">
               <button className="text-gray-400 hover:text-primary-400 transition-colors">Privacy Policy</button>
               <button className="text-gray-400 hover:text-primary-400 transition-colors">Terms of Service</button>
               <button className="text-gray-400 hover:text-primary-400 transition-colors">Sitemap</button>
             </div>
           </div>
           
-          <div className="mt-4 pt-4 border-t border-gray-800 text-center">
+          <div className="mt-3 pt-3 border-t border-gray-800 text-center">
             <p className="text-xs text-gray-500">
               Professional pest control services in Sydney • Eco-friendly solutions • Child & pet safe treatments
             </p>

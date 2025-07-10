@@ -73,44 +73,44 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <section id="why-choose-us" className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="why-choose-us" className="py-12 md:py-16 bg-gradient-to-b from-gray-50 to-white rounded-xl mb-12">
+      <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Award className="h-5 w-5 text-primary-600" />
-            <span className="text-primary-600 font-medium text-sm uppercase tracking-wide">
+        <div className="text-center mb-12">
+          <div className="flex items-center justify-center space-x-2 mb-3">
+            <Award className="h-4 w-4 text-primary-600" />
+            <span className="text-primary-600 font-medium text-xs uppercase tracking-wide">
               Why Choose Ecovia
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Sydney's Most Trusted
             <span className="text-primary-600 block">Eco-Friendly Pest Control</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We're not just another pest control company. We're your neighbors, 
             committed to protecting Sydney families with safe, effective, and environmentally responsible solutions.
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             const colorClasses = getColorClasses(benefit.color);
             
             return (
               <Card key={index} className={`group hover:shadow-lg transition-all duration-300 border-gray-200 ${colorClasses.border}`}>
-                <CardContent className="p-6">
-                  <div className={`${colorClasses.iconBg} w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-colors`}>
-                    <IconComponent className={`h-6 w-6 ${colorClasses.iconColor}`} />
+                <CardContent className="p-5">
+                  <div className={`${colorClasses.iconBg} w-10 h-10 rounded-lg flex items-center justify-center mb-3 transition-colors`}>
+                    <IconComponent className={`h-5 w-5 ${colorClasses.iconColor}`} />
                   </div>
                   
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {benefit.title}
                   </h3>
                   
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     {benefit.description}
                   </p>
                 </CardContent>
@@ -120,23 +120,23 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">500+</div>
-              <p className="text-gray-600">Happy Customers</p>
+              <div className="text-2xl md:text-3xl font-bold text-primary-600 mb-1">500+</div>
+              <p className="text-sm text-gray-600">Happy Customers</p>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">5+</div>
-              <p className="text-gray-600">Years Experience</p>
+              <div className="text-2xl md:text-3xl font-bold text-secondary-600 mb-1">5+</div>
+              <p className="text-sm text-gray-600">Years Experience</p>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">24/7</div>
-              <p className="text-gray-600">Emergency Service</p>
+              <div className="text-2xl md:text-3xl font-bold text-accent-600 mb-1">24/7</div>
+              <p className="text-sm text-gray-600">Emergency Service</p>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">100%</div>
-              <p className="text-gray-600">Satisfaction Rate</p>
+              <div className="text-2xl md:text-3xl font-bold text-primary-600 mb-1">100%</div>
+              <p className="text-sm text-gray-600">Satisfaction Rate</p>
             </div>
           </div>
         </div>
